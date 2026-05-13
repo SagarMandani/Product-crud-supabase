@@ -1,77 +1,79 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Product Crud With Supabase App
 
-# Getting Started
+https://github.com/user-attachments/assets/d7a4797e-ff36-4302-bda4-190fb618b431
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+<hr />
+<h3>Installation and Usage</h3>
+<hr />
 
-## Step 1: Start Metro
+Download or clone this repo by using the below link:
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+```
+git clone https://github.com/SagarMandani/Product-crud-supabase.git
+```
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+Go to project root folder
 
-```sh
-# Using npm
+```
+cd Product-crud-supabase
+```
+
+```
+npm or yarn install
+```
+
+## Step 1: Start the Metro Server
+
+First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+
+To start Metro, run the following command from the _root_ of your React Native project:
+
+```bash
+# using npm
 npm start
 
 # OR using Yarn
 yarn start
 ```
 
-## Step 2: Build and run your app
+## Step 2: Start your Application
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-### Android
+Make sure you have an ios Simulator or Android Emulator running or have an ios device with you:
 
-```sh
-# Using npm
-npm run android
+### For Android
 
-# OR using Yarn
-yarn android
+yarn android to run the Android application (remember to start a simulator or connect an Android phone)
+
+```
+npx react-native run-android
 ```
 
-### iOS
+### For IOS
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+```
+cd ios && pod install && cd ..
 ```
 
-Then, and every time you update your native dependencies, run:
+yarn ios to run the iOS application (remember to start a simulator or connect an iPhone phone)
 
-```sh
-bundle exec pod install
+```
+npx react-native run-ios
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
-```sh
-# Using npm
-npm run ios
+This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-# OR using Yarn
-yarn ios
-```
+## Step 3: Modifying your App
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+Now that you have successfully run the app, let's modify it.
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+1. Open `App.tsx` in your text editor of choice and edit some lines.
+2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
 
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
 ## Congratulations! :tada:
 
@@ -80,11 +82,11 @@ You've successfully run and modified your React Native App. :partying_face:
 ### Now what?
 
 - If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
 
 # Troubleshooting
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
 
 # Learn More
 
